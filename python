@@ -14,3 +14,37 @@ def minimum(random_lista):
             najmniejsza=i
     return najmniejsza
 print(f'najmniejsza liczba w liscie {random_lista}, to {minimum(random_lista)}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+char=input('wprowadz jakies zdanie ')
+def slownik(char):
+    d={}
+    for ch in char:
+        ch=ch.lower()
+        if ch.isalpha():
+            if ch in d:
+                d[ch]+=1
+            else:
+                d[ch]=1
+    return d
+
+def highest(d):
+    charmax=''
+    iloscmax=0
+    for key in d:
+        if d[key]>iloscmax:
+            iloscmax=d[key]
+            charmax=key
+    return f'najwiecej razy wystepuje: {charmax}, {iloscmax} razy'
+print(highest(slownik(char)))
