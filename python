@@ -1,0 +1,16 @@
+import random
+
+def random_list():
+    random_num=[random.randint(-10,10)for i in range(10)]
+    return random_num
+random_lista=random_list()
+print(random_lista)
+print('znajdziemy teraz namniejsza liczbe w tej liscie')
+
+def minimum(random_lista):
+    najmniejsza=random_lista[0]
+    for i in random_lista:
+        if i<najmniejsza:
+            najmniejsza=i
+    return najmniejsza
+print(f'najmniejsza liczba w liscie {random_lista}, to {minimum(random_lista)}')
