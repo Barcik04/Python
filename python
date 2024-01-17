@@ -1,3 +1,6 @@
+||||||||||||||||||||||||||||||||||||||||||||||||random lista min
+
+
 import random
 
 def random_list():
@@ -23,8 +26,7 @@ print(f'najmniejsza liczba w liscie {random_lista}, to {minimum(random_lista)}')
 
 
 
-
-
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||pokazuje najczesciej wystepujaca
 
 
 char=input('wprowadz jakies zdanie ')
@@ -58,8 +60,7 @@ print(highest(slownik(char)))
 
 
 
-
-
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||slownik wylicza ilosc ale except jak nie są calkowite 
 
 
 liczby=input('wprowadz liczby calkowite')
@@ -78,3 +79,25 @@ def ile_razy(liczby):
             dict[key]=1
     return dict
 print(ile_razy(liczby))
+
+
+
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||PLIK
+
+def czytaj():
+    op=open("./jala.txt","r")
+    read=op.readlines()
+    print(read)
+    dict={}
+    for key in read:
+        for chr in key:
+            if chr.isalpha():
+                if chr in dict:
+                    dict[chr]+=1
+                else:
+                    dict[chr]=1
+    return dict
+print(czytaj())
