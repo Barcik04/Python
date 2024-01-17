@@ -48,3 +48,33 @@ def highest(d):
             charmax=key
     return f'najwiecej razy wystepuje: {charmax}, {iloscmax} razy'
 print(highest(slownik(char)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+liczby=input('wprowadz liczby calkowite')
+
+def ile_razy(liczby):
+    dict={}
+    for key in liczby:
+        try:
+            int_key=int(key)
+        except ValueError:
+            print(f'klucz {key} nie jest liczba calkowita')
+            continue
+        if key in dict:
+            dict[key]+=1
+        else:
+            dict[key]=1
+    return dict
+print(ile_razy(liczby))
