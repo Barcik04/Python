@@ -1,0 +1,13 @@
+import random
+
+los=random.randint(1,100)
+
+while True:
+    liczba=int(input('zgadnij liczbe '))
+    if los>liczba:
+        print('liczba losowa jest wieksza od twojej')
+    elif los<liczba:
+        print('liczba losowa jest mniejsza od twojej')
+    else:
+        print('zgadles!')
+        break
