@@ -1,3 +1,4 @@
+|||||||||||||||||||||||||||||||||||||||||||||||ZGADNIJ LOSOWA LICZBE
 import random
 
 los=random.randint(1,100)
@@ -11,3 +12,24 @@ while True:
     else:
         print('zgadles!')
         break
+
+
+||||||||||||||||||||||||||||||||||||||||||||||najdluzszy wyraz w liscie
+lista=[]
+
+while True:
+    string=input('podaj string ')
+    if string!='':
+        lista.append(string)
+    elif string=='':
+        break
+
+
+
+def najdluzszy(lista):
+    max=lista[0]
+    for i in lista:
+        if len(i)>len(max):
+            max=i
+    return max
+print(najdluzszy(lista))so 
