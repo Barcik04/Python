@@ -175,3 +175,27 @@ def drugie_naj(slownik):
 druga_litera, druga_ilosc, naj_ilosc, naj_litera = drugie_naj(wystepowanie(slowo))
 
 print(f'najczesciej wystepujaca litera to {naj_litera} i {naj_ilosc} razy, a druga najczesciej to {druga_litera} i {druga_ilosc} razy')
+
+
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||ZAD Z LICZBAMI W LISTACH KTORE WYSTEPUJA TYLKO 2 RAZY
+lista1=[1,2,3,4]
+lista2=[1,2,3,5]
+lista3=[1,9,4,5]
+
+
+def polaczenie(lista1,lista2,lista3):
+    lista_all=lista1+lista2+lista3
+    return lista_all
+
+def dwa_razy(lista_all):
+    lista_dwa=[]
+    for i in lista_all:
+        if lista_all.count(i)==2:
+            if i not in lista_dwa:
+                lista_dwa.append(i)
+    return lista_dwa
+polaczenie=polaczenie(lista1,lista2,lista3)
+print(dwa_razy(polaczenie))
