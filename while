@@ -33,3 +33,31 @@ def najdluzszy(lista):
             max=i
     return max
 print(najdluzszy(lista))so 
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||PROGRAM NAJCZESTSZA LICZBA I NAJWIEKSZA
+lista=[]
+
+while True:
+    try:
+        liczba=int(input('wprowadz liczbe '))
+        lista.append(liczba)
+    except ValueError:
+        break
+print(lista)
+
+def najwieksza(lista):
+    max=lista[0]
+    najczesciej=lista[0]
+    najczesciej_count=lista.count(lista[0])
+    for i in lista:
+        if lista.count(i)>najczesciej_count:
+            najczesciej=i
+            najczesciej_count=lista.count(i)
+        if i>max:
+            max=i
+    return max, najczesciej
+
+print(najwieksza(lista))
+
