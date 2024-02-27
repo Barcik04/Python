@@ -28,4 +28,24 @@ if p >= q:
 else:
     print(f'{int(p)}/{int(q)}')
 
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||liczba EULERA
+import math
 
+
+def oblicz_e(n):
+    e1 = (1+(1/n))**n
+    e2 = 0
+    for k in range(1, n+1):
+        e2 += 1/math.factorial(k)
+    return e1, e2
+
+
+n_values = [1, 2, 5, 10, 20, 50, 100]
+
+for n in n_values:
+    e1, e2 = oblicz_e(n)
+    print(f'dla n={n}')
+    print(f'{e1} - {math.e}')
+    print(f'{e2} - {math.e}')
+    print(f'{abs(e1)} - {abs(math.e)}')
+    print(f'{abs(e2)} - {abs(math.e)}\n')
