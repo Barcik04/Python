@@ -1,0 +1,14 @@
+n = int(input('wprowadz liczbe '))
+
+if n<100:
+    pierwszy=''
+    for i in range(1,n+1):
+        pierwszy+=f'{i}\t'
+    print(pierwszy)
+    for i in range(1,n+1):
+        wiersz=''
+        for j in range(1,n+1):
+            wiersz+=f'{i*j}\t'
+        print(wiersz)
+else:
+    print('twoja liczba musi być mniejsza od 100')
