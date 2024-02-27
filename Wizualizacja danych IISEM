@@ -1,3 +1,4 @@
+|||||||||||||||||||||||||||||||||||||||||||||TABLICZKA MNOZENIA
 n = int(input('wprowadz liczbe '))
 
 if n<100:
@@ -12,3 +13,19 @@ if n<100:
         print(wiersz)
 else:
     print('twoja liczba musi być mniejsza od 100')
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||NWD z uzyciem math.gcd
+from math import gcd
+
+
+a = int(input('wprowadz liczbe '))
+b = int(input('wprowadz liczbe '))
+dzielnik = (gcd(a, b))
+p = int(a/dzielnik)
+q = int(b/dzielnik)
+if p >= q:
+    print(int(p/q))
+else:
+    print(f'{int(p)}/{int(q)}')
+
+
