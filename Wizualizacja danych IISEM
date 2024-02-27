@@ -49,3 +49,5 @@ for n in n_values:
     print(f'{e2} - {math.e}')
     print(f'{abs(e1)} - {abs(math.e)}')
     print(f'{abs(e2)} - {abs(math.e)}\n')
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| NWD EUKLIDESA
