@@ -1,3 +1,6 @@
 math.gcd (najwiekszy wspolny dzielnik(dzielnik = (gcd(a,b)))
 math.e (liczba eulera)
 math.factorial (silnia(e2 += 1/math.factorial(k)))
+math.ceil(x) (szacowanie do gory) result = math.ceil(4.2)
+math.comb (oblicza liczbe kombinacji z powtorzeniami) c = math.comb(n, k)
+math.copysign(x, y) (zwraca liczbe x, ale znak y) math.copysign(10, -2) zworci nam -10.0
