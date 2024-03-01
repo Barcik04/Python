@@ -21,3 +21,7 @@ math.isnan(x) (czy nieskonczonosc nie jest liczbą (NaN))
 math.ldexp(x, i) Return x * (2**i) odwrocenie(math.frexp)
 math.nextafter(x, y) (bierze najmniejszą kolejna liczbe float po x dazaca do y)
 math.perm(n, k) Return the number of ways to choose k items from n items without repetition and with order.
+math.prod([1, 2, 3], start=2) (tutaj liczy iloczyn 1*2*3*2 bo start=2 czyli mnozy jeszcze przez start
+math.reminder(x, y) jest to modulo tylko moze zwracac liczby z minusem)
+math.sumprod (p = [1, 2, 3] q = [4, 5, 6] result = sumprod(p, q) print(result)  # Wynik to 1*4 + 2*5 + 3*6 = 32)
+math.cbrt(x) Return the cube root of x.
