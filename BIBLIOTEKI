@@ -1,4 +1,4 @@
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||IMPORT math|||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||IMPORT math||||||||||||||||||||||||||||||||||||||||||||||||||||||
 math.gcd (najwiekszy wspolny dzielnik(dzielnik = (gcd(a,b)))
 math.e (liczba eulera)
 math.factorial (silnia(e2 += 1/math.factorial(k)))
@@ -8,3 +8,16 @@ math.copysign(x, y) (zwraca liczbe x, ale znak y) math.copysign(10, -2) zworci n
 math.floor(x) (szacowanie do mniejszej calkowitej)
 math.fmod(x, y) (modulo tylko że do liczb float itp.)
 math.frexp(x) (rozklada nam np 5 na (0.625, 3) bo 0.625*2^3=5)
+math.fsum([5.0, 3.0]) (bardziej precyzyjny sposob sumowania liczb float)
+math.isclose(a, b, rel_tol=1, abs_tol=1)  
+  a i b to wartości, które chcesz porównać.
+  -rel_tol jest maksymalną dopuszczalną różnicą względną między a i b. 
+  Domyślnie jest ustawiona na 1e-9, co oznacza, że wartości są uznawane za bliskie, jeśli nie różnią się o więcej niż 1*10^-9 procent ich wartości.
+  -abs_tol jest maksymalną dopuszczalną różnicą bezwzględną między a i b. Można ją ustawić, aby zapewnić minimalną różnicę, poniżej której wartości są zawsze uznawane za bliskie, niezależnie od ich wielkości. 
+  Domyślnie jest ustawiona na 0.0.
+math.isfinite(x) (Zwraca TRUE gdy x jest skonczone, a FALSE jak jest nieskończone)
+math.isinf(x) (TRUE jak nieskonczonosc dodatnia FALSE jesli ujemna
+math.isnan(x) (czy nieskonczonosc nie jest liczbą (NaN))
+math.ldexp(x, i) Return x * (2**i) odwrocenie(math.frexp)
+math.nextafter(x, y) (bierze najmniejszą kolejna liczbe float po x dazaca do y)
+math.perm(n, k) Return the number of ways to choose k items from n items without repetition and with order.
