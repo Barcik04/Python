@@ -1,1 +1,1 @@
-
+operatory bitowe
