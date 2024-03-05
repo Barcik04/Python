@@ -34,5 +34,5 @@ math.log2(x) Return the base-2 logarithm of x.
 The strip() method removes any whitespace from the beginning or the end: a = " Hello, World! " print(a.strip()) # returns "Hello, World!" 
 The replace() method replaces a string with another string: a = "Hello, World!" print(a.replace("H", "J"))
 The split() method splits the string into substrings if it finds instances of the separator: a = "Hello, World!" print(a.split(",")) # returns ['Hello', ' World!']
-
+wynik = "Produkt: {nazwa}, Cena: {cena:.2f} zł, Ilość: {ilosc}".format(nazwa="Książka", cena=39.99, ilosc=3) print(wynik) # Wynik: Produkt: Książka, Cena: 39.99 zł, Ilość: 3
 
