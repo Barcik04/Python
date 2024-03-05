@@ -199,3 +199,31 @@ def dwa_razy(lista_all):
     return lista_dwa
 polaczenie=polaczenie(lista1,lista2,lista3)
 print(dwa_razy(polaczenie))
+
+
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||mnozenie liczb w tekstu
+
+string = ("W Roku Pańskim 1345, władca Henryk 12, na rzecz swoich 14309 "
+          "poddanych uchwalił dekret o 20 procentowej zniżce podatków2")
+
+b = len(string)
+tyl = string[:b-2:-1]
+wynik = []
+liczby = ''
+for i in string:
+    if i.isdigit():
+        liczby += i
+    elif i != i.isdigit() and liczby:
+        wynik.append(liczby)
+        liczby = ''
+if tyl.isdigit():
+    wynik.append(tyl)
+
+mnozenie = 1
+for j in wynik:
+    mnozenie *= int(j)
+print(mnozenie)
+
+# This code was made to take out all the int values in given string and then multiply them by each other. Code is made by Igor Barcikowski
