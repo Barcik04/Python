@@ -1,0 +1,13 @@
+||||||||||||||||||||||||||Posortowana alfabetycznie lista nazwisk i odwrocona i ucieta o nazwiska przed podana litera w alfabecie|||||||||||
+Nazwiska = [
+    'Nowak', 'Wiśniewski', 'Lewandowski',
+    'Wójcik', 'Zieliński', 'Szymański',
+    'Woźniak', 'Wojciechowski']
+
+def tylko_wieksze(nazw, litera):
+    sortede = [nazwisko for nazwisko in nazw if nazwisko[0] > litera]
+    sortede = sorted(sortede, reverse = True)  # odwrocenie listy
+    return sortede
+
+nazwisk = tylko_wieksze(Nazwiska, 'L')
+print(nazwisk)
