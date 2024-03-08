@@ -46,3 +46,4 @@ re.sub(pattern, repl, string): Zastępuje wszystkie wystąpienia wzorca pattern 
 wynikowa = [x + y for x, y in zip(list1, list2)] (daje nam sume po takich samych idexach)
 for x, y in zip(list1, list2):  print(f"Number: {x}, Letter: {y}") (wypisuje nam x i y z pierwszego indexu a potem w kolejnej linijce znow)
 append, extend, insert, remove, pop, clear, index, count, sort, reverse, copy  (funkcje operacji na listach)
+zip(list1, list2) (łączy elementy z obu list w pary na podstawie ich indeksów)
