@@ -11,3 +11,19 @@ def tylko_wieksze(nazw, litera):
 
 nazwisk = tylko_wieksze(Nazwiska, 'L')
 print(nazwisk)
+
+
+
+
+
+||||||||||||||||||||||||||||||tworzona jest randomowa lista ktora sprawdza czy cala lista jest uporzadkowana od najmniejszej liczby do najwiekszej||||||||||||||||||||||
+import random
+
+
+lista =  [random.randint(1, 10) for i in range(1, 10)]
+print(lista)
+
+def is_sorted(lista):
+
+    return all(lista[i] <= lista[i+1] for i in range(len(lista)-1))
+print(is_sorted(lista))
