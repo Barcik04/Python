@@ -47,3 +47,5 @@ wynikowa = [x + y for x, y in zip(list1, list2)] (daje nam sume po takich samych
 for x, y in zip(list1, list2):  print(f"Number: {x}, Letter: {y}") (wypisuje nam x i y z pierwszego indexu a potem w kolejnej linijce znow)
 append, extend, insert, remove, pop, clear, index, count, sort, reverse, copy  (funkcje operacji na listach)
 zip(list1, list2) (łączy elementy z obu list w pary na podstawie ich indeksów)
+all(iterable): Przyjmuje jako argument iterowalny obiekt (takie jak lista lub krotka) i zwraca True, jeśli wszystkie elementy w iterowalnym są prawdziwe (lub jeśli iterowalny jest pusty). Jest to logiczny odpowiednik operacji and dla listy argumentów.
+any(iterable): Podobnie jak all(), ale zwraca True, jeśli przynajmniej jeden z elementów w iterowalnym jest prawdziwy. Jest to logiczny odpowiednik operacji or dla listy argumentów.
