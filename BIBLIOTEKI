@@ -35,4 +35,8 @@ The strip() method removes any whitespace from the beginning or the end: a = " H
 The replace() method replaces a string with another string: a = "Hello, World!" print(a.replace("H", "J"))
 The split() method splits the string into substrings if it finds instances of the separator: a = "Hello, World!" print(a.split(",")) # returns ['Hello', ' World!']
 wynik = "Produkt: {nazwa}, Cena: {cena:.2f} zł, Ilość: {ilosc}".format(nazwa="Książka", cena=39.99, ilosc=3) print(wynik) # Wynik: Produkt: Książka, Cena: 39.99 zł, Ilość: 3
-
+re.match(pattern, string): Sprawdza, czy ciąg znaków string zaczyna się od pasującego do pattern wzorca. Zwraca obiekt dopasowania, jeśli wzorzec został odnaleziony, lub None, jeśli nie.
+re.search(pattern, string): Przeszukuje ciąg znaków string w poszukiwaniu pierwszego wystąpienia wzorca pattern. Zwraca obiekt dopasowania, jeśli wzorzec został odnaleziony, lub None, jeśli nie.
+re.findall(pattern, string): Znajduje wszystkie niezachodzące na siebie wystąpienia wzorca pattern w ciągu string i zwraca je jako listę.
+re.finditer(pattern, string): Podobnie jak findall, ale zamiast zwracać listę pasujących ciągów, zwraca iterator obiektów dopasowania.
+re.sub(pattern, repl, string): Zastępuje wszystkie wystąpienia wzorca pattern w ciągu string ciągiem repl i zwraca nowy ciąg znaków.
