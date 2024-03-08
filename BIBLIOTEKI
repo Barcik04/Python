@@ -40,3 +40,8 @@ re.search(pattern, string): Przeszukuje ciąg znaków string w poszukiwaniu pier
 re.findall(pattern, string): Znajduje wszystkie niezachodzące na siebie wystąpienia wzorca pattern w ciągu string i zwraca je jako listę.
 re.finditer(pattern, string): Podobnie jak findall, ale zamiast zwracać listę pasujących ciągów, zwraca iterator obiektów dopasowania.
 re.sub(pattern, repl, string): Zastępuje wszystkie wystąpienia wzorca pattern w ciągu string ciągiem repl i zwraca nowy ciąg znaków.
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||LISTY||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+wynikowa = [x + y for x, y in zip(list1, list2)] (daje nam sume po takich samych idexach)
+for x, y in zip(list1, list2):  print(f"Number: {x}, Letter: {y}") (wypisuje nam x i y z pierwszego indexu a potem w kolejnej linijce znow)
