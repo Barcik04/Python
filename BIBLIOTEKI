@@ -49,3 +49,10 @@ append, extend, insert, remove, pop, clear, index, count, sort, reverse, copy  (
 zip(list1, list2) (łączy elementy z obu list w pary na podstawie ich indeksów)
 all(iterable): Przyjmuje jako argument iterowalny obiekt (takie jak lista lub krotka) i zwraca True, jeśli wszystkie elementy w iterowalnym są prawdziwe (lub jeśli iterowalny jest pusty). Jest to logiczny odpowiednik operacji and dla listy argumentów.
 any(iterable): Podobnie jak all(), ale zwraca True, jeśli przynajmniej jeden z elementów w iterowalnym jest prawdziwy. Jest to logiczny odpowiednik operacji or dla listy argumentów.
+list.extend(iterable) Extend the list by appending all the items from the iterable
+list.insert(i, x) Insert an item at a given position.
+list.remove(x) Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.
+list.pop([i]) Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and returns the last item in the list.
+list.clear() Remove all items from the list.
+my_list = ['apple', 'banana', 'cherry', 'date', 'fig', 'grape'] # Find the index of 'banana', within the range between indices 1 and 4 index = my_list.index('banana', 1, 4)
+list.sort(key=None, reverse=False)
