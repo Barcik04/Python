@@ -57,3 +57,26 @@ list.clear() Remove all items from the list.
 my_list = ['apple', 'banana', 'cherry', 'date', 'fig', 'grape'] # Find the index of 'banana', within the range between indices 1 and 4 index = my_list.index('banana', 1, 4)
 list.sort(key=None, reverse=False)
 combs.append((x, y)) combination of two lists of integers with the same index (3, 2)
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||SETS||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Removing Elements
+    add(element): Adds an element to the set
+    remove(element): Removes an element from the set. Raises a KeyError if the element is not present.
+    discard(element): Removes an element from the set if it is present. Does not raise an error if the element is not found.
+    pop(): Removes and returns an arbitrary element from the set. Raises a KeyError if the set is empty.
+    clear(): Removes all elements from the set.
+Set Operations
+    union(*others), set | other | ...: Returns a new set with elements from the set and all others.
+    intersection(*others), set & other & ...: Returns a new set with elements common to the set and all others.
+    difference(*others), set - other - ...: Returns a new set with elements in the set that are not in the others.
+    symmetric_difference(other), set ^ other: Returns a new set with elements in either the set or other but not in both.
+    update(*others), set |= other | ...: Updates the set, adding elements from all others.
+    intersection_update(*others), set &= other & ...: Updates the set, keeping only elements found in it and all others.
+    difference_update(*others), set -= other | ...: Updates the set, removing elements found in others.
+    symmetric_difference_update(other), set ^= other: Updates the set, keeping only elements found in either the set or other but not in both.
+Set Comparison
+    issubset(other), set <= other: Checks whether every element in the set is in other.
+    issuperset(other), set >= other: Checks whether every element in other is in the set.
+    isdisjoint(other): Checks whether the set has no elements in common with other.
