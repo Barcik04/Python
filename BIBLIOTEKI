@@ -80,3 +80,40 @@ Set Comparison
     issubset(other), set <= other: Checks whether every element in the set is in other. (is_subset = set3 <= set2)
     issuperset(other), set >= other: Checks whether every element in other is in the set.
     isdisjoint(other): Checks whether the set has no elements in common with other.
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||TUPLES|||||||||||||||||||||||||||||||||||||||||||||||||||||
+len(tuple): Returns the number of items in the tuple.
+Example: len((1, 2, 3)) returns 3.
+
+tuple[index]: Accesses the item at the specified index.
+Example: ('a', 'b', 'c')[1] returns 'b'.
+
+tuple.count(value): Returns the number of times value appears in the tuple.
+Example: (1, 2, 2, 3).count(2) returns 2.
+
+tuple.index(value, [start, [stop]]): Returns the index of the first occurrence of value. Optional arguments start and stop are used to limit the search to a subsequence of the tuple.
+Example: (1, 2, 3, 2, 4).index(2) returns 1.
+
+Concatenation (+): Combines two tuples into one.
+Example: (1, 2) + (3, 4) returns (1, 2, 3, 4).
+
+Repetition (*): Repeats the tuple a given number of times.
+Example: (1, 2) * 2 returns (1, 2, 1, 2).
+
+Membership Test (in, not in): Checks if a value exists within the tuple.
+Example: 2 in (1, 2, 3) returns True.
+
+Slicing: Extracts a part of the tuple.
+Example: (1, 2, 3, 4, 5)[1:3] returns (2, 3).
+
+max(tuple): Returns the largest item in the tuple.
+Example: max((1, 2, 3)) returns 3.
+
+min(tuple): Returns the smallest item in the tuple.
+Example: min((1, 2, 3)) returns 1.
+
+sum(tuple): Returns the sum of the items in the tuple. Works only if all the items are numeric.
+Example: sum((1, 2, 3)) returns 6.
+
+
