@@ -45,3 +45,12 @@ def zmiana_miejsc(random1, random2):
         print(math.isclose(random1[i], random2[i], rel_tol=0.6))
     print(f' rand1 = {random1}\n, rand2 = {random2}')
 zmiana = zmiana_miejsc(random1, random2)
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||Zmienic wartosc o indexie 2 w krotce||||||||||||||||||||||||||||||
+krotka = ('Durszlak', 123, 5.54, {'slownik': 1}, [1,2,3], {1,2,3}, (1,2,3))
+
+wartosc = 7.21
+zamieniona = krotka[:2] + (wartosc,) + krotka[3:]
+print(zamieniona)
+#('Durszlak', 123, 7.21, {'slownik': 1}, [1, 2, 3], {1, 2, 3}, (1, 2, 3))
