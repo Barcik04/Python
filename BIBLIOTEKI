@@ -77,6 +77,6 @@ Set Operations
     difference_update(*others), set -= other | ...: Updates the set, removing elements found in others.
     symmetric_difference_update(other), set ^= other: Updates the set, keeping only elements found in either the set or other but not in both.
 Set Comparison
-    issubset(other), set <= other: Checks whether every element in the set is in other.
+    issubset(other), set <= other: Checks whether every element in the set is in other. (is_subset = set3 <= set2)
     issuperset(other), set >= other: Checks whether every element in other is in the set.
     isdisjoint(other): Checks whether the set has no elements in common with other.
