@@ -26,7 +26,7 @@ math.reminder(x, y) jest to modulo tylko moze zwracac liczby z minusem)
 math.sumprod (p = [1, 2, 3] q = [4, 5, 6] result = sumprod(p, q) print(result)  # Wynik to 1*4 + 2*5 + 3*6 = 32)
 math.cbrt(x) Return the cube root of x.
 math.log2(x) Return the base-2 logarithm of x.
-
+XOR = a ^ b 
 
 
 
