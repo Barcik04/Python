@@ -54,3 +54,20 @@ wartosc = 7.21
 zamieniona = krotka[:2] + (wartosc,) + krotka[3:]
 print(zamieniona)
 #('Durszlak', 123, 7.21, {'slownik': 1}, [1, 2, 3], {1, 2, 3}, (1, 2, 3))
+
+
+
+||||||||||||||||||||||||||||||||||||||||PHONE NUMBERS (DICT)|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+slownik = {
+    'Anna Bol Bol': 123456789,
+    'Jan Irving': 987654321,
+    'Ewa Sochan': 456789123,
+    'Tomasz James': 321654987
+}
+print(slownik)
+miejsce = input("podaj kogo telefon chcesz ")
+def print_phone_numbers(slownik, miejsce):
+    if miejsce in slownik:
+        print(f'{miejsce}, ma nr telefonu {slownik[miejsce]}')
+wynik = print_phone_numbers(slownik, miejsce)
+print(wynik)
