@@ -5,3 +5,4 @@ Pouczyc sie list comprehensions
 
 Funkcja sorted z lambda i key
 zadania z listami tuplami itp.
+args kwargs
