@@ -131,6 +131,8 @@ del thisdict  The del keyword can also delete the dictionary completely
 thisdict.clear()  The clear() method empties the dictionary
 dictionary.get(keyname, value)  The get() method returns the value of the item with the specified key. value is optional.
 dictionary.setdefault(keyname, value) The setdefault() method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value
+thisdict.copy()  Make a copy of a dictionary with the copy() method:
+dict.fromkeys(keys, value)  The fromkeys() method returns a dictionary with the specified keys and the specified value.
 
 
 Print all values in the dictionary, one by one:
@@ -149,5 +151,4 @@ Loop through both keys and values, by using the items() method:
 for x, y in thisdict.items():
   print(x, y)
 
-thisdict.copy()  Make a copy of a dictionary with the copy() method:
-dict.fromkeys(keys, value)  The fromkeys() method returns a dictionary with the specified keys and the specified value.
+
