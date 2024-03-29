@@ -57,7 +57,7 @@ list.clear() Remove all items from the list.
 my_list = ['apple', 'banana', 'cherry', 'date', 'fig', 'grape'] # Find the index of 'banana', within the range between indices 1 and 4 index = my_list.index('banana', 1, 4)
 list.sort(key=None, reverse=False)
 combs.append((x, y)) combination of two lists of integers with the same index (3, 2)
-
+COMPREHENSION  newlist = [expression for item in iterable if condition == True]
 
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||SETS||||||||||||||||||||||||||||||||||||||||||||||||||||||
