@@ -116,4 +116,38 @@ Example: min((1, 2, 3)) returns 1.
 sum(tuple): Returns the sum of the items in the tuple. Works only if all the items are numeric.
 Example: sum((1, 2, 3)) returns 6.
 
+||||||||||||||||||||||||||||||||||||||||||||DICTS||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
 
+thisdict["color"] = "red"  Adding an item to the dictionary is done by using a new index key and assigning a value to it:
+thisdict.update({"color": "red"})  The update() method will update the dictionary with the items from a given argument. If the item does not exist, the item will be added. The argument must be a dictionary, or an iterable object with key:value pairs.
+thisdict.pop("model")  The pop() method removes the item with the specified key name:
+thisdict.popitem()  The popitem() method removes the last inserted item
+del thisdict  The del keyword can also delete the dictionary completely
+thisdict.clear()  The clear() method empties the dictionary
+dictionary.get(keyname, value)  The get() method returns the value of the item with the specified key. value is optional.
+dictionary.setdefault(keyname, value) The setdefault() method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value
+
+
+Print all values in the dictionary, one by one:
+for x in thisdict:
+  print(thisdict[x])
+
+You can also use the values() method to return values of a dictionary:
+for x in thisdict.values():
+  print(x)
+
+You can use the keys() method to return the keys of a dictionary:
+for x in thisdict.keys():
+  print(x)
+
+Loop through both keys and values, by using the items() method:
+for x, y in thisdict.items():
+  print(x, y)
+
+thisdict.copy()  Make a copy of a dictionary with the copy() method:
+dict.fromkeys(keys, value)  The fromkeys() method returns a dictionary with the specified keys and the specified value.
