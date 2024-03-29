@@ -72,7 +72,7 @@ Set Operations
     intersection(*others), set & other & ...: Returns a new set with elements common to the set and all others.
     difference(*others), set - other - ...: Returns a new set with elements in the set that are not in the others.
     symmetric_difference(other), set ^ other: Returns a new set with elements in either the set or other but not in both.
-    update(*others), set |= other | ...: Updates the set, adding elements from all others.
+    update(others), set |= other | ...: Updates the set, adding elements from all others.
     intersection_update(*others), set &= other & ...: Updates the set, keeping only elements found in it and all others.
     difference_update(*others), set -= other | ...: Updates the set, removing elements found in others.
     symmetric_difference_update(other), set ^= other: Updates the set, keeping only elements found in either the set or other but not in both.
