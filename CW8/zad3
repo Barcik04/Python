@@ -1,0 +1,28 @@
+import numpy as np
+np.set_printoptions(suppress=True)
+
+Panstwa = np.array(["China","Japan","Germany","USA","South Korea","India","Brazil","Mexico","Spain","Russia"])
+Rok1999 = np.array([0.56,8.1,5.3,5.63,2.36,0.53,1.1,0.99,2.28,0.94])
+Rok2014 = np.array([19.91,8.27,5.6,4.25,4.12,3.15,2.31,1.91,1.89,1.69])
+
+wzrost_procentowy = ((Rok2014 - Rok1999) / Rok1999) * 100
+wzrost_procentowy_rounded = np.round(wzrost_procentowy,2)
+
+
+print(f'\n\n')
+
+min_index_1999 = np.argmin(Rok1999)
+max_index_1999 = np.argmax(Rok1999)
+min_index_2014 = np.argmin(Rok2014)
+max_index_2014 = np.argmax(Rok2014)
+
+kraje_mniej_samochodow = Panstwa[Rok2014 < Rok1999]
+
+wzrost_procentowy_rounded, Panstwa[min_index_1999], Panstwa[max_index_1999], Panstwa[min_index_2014], Panstwa[max_index_2014], kraje_mniej_samochodow
+
+print(f'Percentage Increase: {wzrost_procentowy_rounded}')
+print(f'Least production in 1999: {Panstwa[min_index_1999]}')
+print(f'Most production in 1999: {Panstwa[max_index_1999]}')
+print(f'Least production in 2014: {Panstwa[min_index_2014]}')
+print(f'Most production in 2014: {Panstwa[max_index_2014]}')
+print(f'Countries with less production in 2014 than in 1999: {kraje_mniej_samochodow}')
