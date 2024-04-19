@@ -1,0 +1,11 @@
+import numpy as np
+
+Imiona = np.array(["Anna","Zofia","Sylwia","Katarzyna","Teresa","Tomasz","Cezary","Zenon","Filip","Adrian"])
+Wiek = np.array([21,40,13,31,34,14,13,28,20,15])
+Plec = np.array(["K","K","K","K","K","M","M","M","M","M"])
+Waga = np.array([65,80,64,69,74,61,66,61,69,77])
+Wzrost = np.array([179,179,151,177,170,157,151,153,160,160])
+Okulary = np.array([False,True,False,True,False,True,False,True,False,True])
+
+Alfabet = np.sort(Imiona)
+print(Alfabet)
