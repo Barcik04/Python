@@ -9,3 +9,17 @@ Okulary = np.array([False,True,False,True,False,True,False,True,False,True])
 
 Alfabet = np.sort(Imiona)
 print(Alfabet)
+CzyOkular = Alfabet[Okulary]
+print(CzyOkular)
+WagaPrzedzial = (Waga >= 60) & (Waga <= 80)
+WzrostPrzdzial = (Wzrost >= 160) & (Wzrost <= 180)
+BrakOkular = Okulary == False
+
+WybraneOsoby = Imiona[WagaPrzedzial & WzrostPrzdzial & BrakOkular]
+print(WybraneOsoby)
+
+
+BMI = np.round(Waga / (Wzrost / 100) ** 2, 4)
+print(BMI)
+
+SredniWiek = Wzrost / len(Wzrost)
