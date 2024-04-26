@@ -22,4 +22,9 @@ print(WybraneOsoby)
 BMI = np.round(Waga / (Wzrost / 100) ** 2, 4)
 print(BMI)
 
-SredniWiek = Wzrost / len(Wzrost)
+SredniWiek = np.mean(Wiek)
+print(SredniWiek)
+
+index_najblizsze = np.argmin(np.abs(Wiek - SredniWiek))
+imie_najblizsze = Imiona[index_najblizsze]
+print(imie_najblizsze)
