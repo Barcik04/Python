@@ -43,10 +43,6 @@ print("\nDivision:")
 print(division)
 
 
-
-import numpy as np
-import pandas as pd
-
 random_numbers = np.random.choice(np.arange(-10, 10.1, 0.1), 10, replace=False)
 
 series = pd.Series(random_numbers)
