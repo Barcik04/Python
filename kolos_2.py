@@ -18,3 +18,10 @@ NUMPY
         
         axis=0: This means we want to sum the elements along the vertical axis (i.e., column-wise summation).
 
+    MEAN
+        arr = np.array([1, 2, 3, 4, 5])
+        result = np.mean(arr)
+        print(result)
+        # Output: 3.0
+        
+        The np.mean function computes the arithmetic mean along the specified axis.
