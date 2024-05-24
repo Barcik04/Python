@@ -29,6 +29,35 @@ SELECTING DATA
         # Selecting rows by label
         print(df.loc[0:2])  # Rows with index 0 to 2 (inclusive)
 
+
+        data = {
+            'A': [1, 2, 2, 4],
+            'B': [5, 6, 7, 8],
+            'C': [9, 10, 11, 12]
+        }
+        
+        df = pd.DataFrame(data)
+        
+        # Grouping data by a column and calculating aggregate statistics
+        grouped = df.groupby('A').sum()
+        print(grouped)
+        #     B   C
+        # A        
+        # 1   5   9
+        # 2  13  21
+        # 4   8  12
+        
+        # Aggregating with multiple functions
+        grouped = df.groupby('A').agg({'B': 'sum', 'C': 'mean'})
+        print(grouped)
+        
+        #     B     C
+        # A          
+        # 1   5   9.0
+        # 2  13  10.5
+        # 4   8  12.0
+
+
   FILTERING DATA
         # Filtering rows based on a condition
         filtered_df = df[df['A'] > 2]
@@ -59,6 +88,24 @@ SELECTING DATA
         # Dropping a row by index
         df = df.drop(0, axis=0)
         print(df)
+
+
+        # Creating a DataFrame with missing values
+        data_with_na = {
+            'A': [1, 2, None, 4],
+            'B': [5, None, 7, 8],
+            'C': [9, 10, 11, None]
+        }
+        df_na = pd.DataFrame(data_with_na)
+        print(df_na)
+        
+        # Dropping rows with missing values
+        df_na_dropped = df_na.dropna()
+        print(df_na_dropped)
+        
+        # Filling missing values
+        df_na_filled = df_na.fillna(100)
+        print(df_na_filled)
 
 
 READING A FILE
