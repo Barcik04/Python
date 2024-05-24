@@ -25,3 +25,11 @@ NUMPY
         # Output: 3.0
         
         The np.mean function computes the arithmetic mean along the specified axis.
+
+    MEDIAN
+        arr = np.array([1, 3, 5, 7, 9])
+        result = np.median(arr)
+        print(result)
+        # Output: 5.0
+        
+        The np.median function computes the median of array elements along the specified axis.
