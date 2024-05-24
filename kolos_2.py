@@ -33,3 +33,11 @@ NUMPY
         # Output: 5.0
         
         The np.median function computes the median of array elements along the specified axis.
+
+    ARG MAX
+        arr = np.array([1, 3, 7, 6, 2])
+        result = np.argmax(arr)
+        print(result)
+        # Output: 2 
+        
+        The np.argmax function returns the indices of the maximum values along an axis.
