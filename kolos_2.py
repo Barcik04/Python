@@ -91,6 +91,26 @@ NUMPY
     
             The np.random.randint function returns random integers from low (inclusive) to high (exclusive).
 
+        ARRAY_SPLIT
+                arr = np.array([[1, 2, 3, 4, 5, 6],
+                [7, 8, 9, 10, 11, 12]])
+                
+                newarr = np.array_split(arr, 3, axis=1)
+                
+                print(newarr[0])
+                print(newarr[1])
+                print(newarr[2])
+                # [[1 2]
+                #  [7 8]]
+                # [[ 3  4]
+                #  [ 9 10]]
+                # [[ 5  6]
+                #  [11 12]]
+
+        SORT
+                arr = np.array([3, 2, 0, 1])
+                print(np.sort(arr))
+                # [0, 1, 2, 3]
 
 
 
