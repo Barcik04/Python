@@ -34,10 +34,57 @@ NUMPY
         
         The np.median function computes the median of array elements along the specified axis.
 
-    ARG MAX
+    ARG MAX/MIN
         arr = np.array([1, 3, 7, 6, 2])
         result = np.argmax(arr)
+        result2 = np.argmin(arr)
         print(result)
         # Output: 2 
         
         The np.argmax function returns the indices of the maximum values along an axis.
+
+    RESHAPE
+        arr = np.array([1, 2, 3, 4, 5, 6])
+        result = np.reshape(arr, (2, 3))
+        print(result)
+        # Output:
+        # [[1 2 3]
+        #  [4 5 6]]
+
+    CONCATENATE
+        arr1 = np.array([1, 2, 3])
+        arr2 = np.array([4, 5, 6])
+        result = np.concatenate((arr1, arr2))
+        print(result)
+        # Output: [1 2 3 4 5 6]
+
+    UNIQUE
+        arr = np.array([1, 2, 2, 3, 4, 4, 5])
+        result = np.unique(arr)
+        print(result)
+        # Output: [1 2 3 4 5]
+
+    LINESPACE
+        result = np.linspace(0, 10, 5)
+        print(result)
+        # Output: [ 0.   2.5  5.   7.5 10. ]
+
+    ARRANGE
+        result = np.arange(0, 10, 2)
+        print(result)
+        # Output: [0 2 4 6 8]
+
+    DOT
+        arr1 = np.array([1, 2, 3])
+        arr2 = np.array([3, 4, 2])
+        result = np.dot(arr1, arr2)
+        print(result)
+        # Output: 17 (1*3) + (2*4) + (3*2)
+
+
+
+
+
+
+
+    
