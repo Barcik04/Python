@@ -81,7 +81,15 @@ NUMPY
         print(result)
         # Output: 17 (1*3) + (2*4) + (3*2)
 
+    RANDOM.RANDINT
+        result = np.random.randint(1, 10, size=(3, 2))
+        print(result)
+        # Output:
+        # [[3 6]
+        #  [4 7]
+        #  [2 9]]
 
+        The np.random.randint function returns random integers from low (inclusive) to high (exclusive).
 
 
 
