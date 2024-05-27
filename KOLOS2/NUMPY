@@ -112,6 +112,14 @@ NUMPY
                 print(np.sort(arr))
                 # [0, 1, 2, 3]
 
+        FLATTEN
+                # Example of argwhere without flatten
+                indices = np.argwhere(shoe_sizes == 10)
+                print(indices)  # Output: array([[23], [30], [38]])
+                
+                # Example of argwhere with flatten
+                indices_flattened = np.argwhere(shoe_sizes == 10).flatten()
+                print(indices_flattened)  # Output: array([23, 30, 38])
 
 
 
