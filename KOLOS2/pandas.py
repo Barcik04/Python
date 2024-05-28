@@ -119,3 +119,8 @@ LOCATING SERIES/DATAFRAME
         print(df['A'])  # Dostęp do kolumny jako Series
         print(df.loc[0])  # Dostęp do wiersza przez etykietę
         print(df.iloc[0]) # Dostęp do wiersza przez indeks pozycyjny
+
+CONVERTING pd TO np
+        my_list = ["red", "blue", "green", "yellow", "black"]
+        my_series = pd.Series(my_list)
+        numpy_array_from_series = my_series.to_numpy()
