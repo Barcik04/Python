@@ -7,6 +7,10 @@ s2 = pd.Series(np.array([10, 20, 30, 40, 50]))
 # Tworzenie Series ze słownika
 s3 = pd.Series({'a': 100, 'b': 200, 'c': 300})
 
+series1 = pd.Series([10, 20, 30, 40], index=['a', 'b', 'c', 'd'])
+series2 = pd.Series([1, 2, 3, 4, 5], index=['a', 'b', 'c', 'd', 'e'])
+
+
         # Wyświetlanie wartości Series
         print(s1.values)
         
