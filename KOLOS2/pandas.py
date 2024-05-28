@@ -124,3 +124,8 @@ CONVERTING pd TO np
         my_list = ["red", "blue", "green", "yellow", "black"]
         my_series = pd.Series(my_list)
         numpy_array_from_series = my_series.to_numpy()
+
+CONVERTING LISTS
+my_list = [1, 32, -37, 91, 12, 11, -5]
+# Converting list to DataFrame
+list_df = pd.DataFrame([my_list], index=['Row1'], columns=[f'Col{i}' for i in range(1, len(my_list) + 1)])
