@@ -114,3 +114,8 @@ READING A FILE
         
         # Writing to a CSV file
         df.to_csv('output.csv', index=False)
+
+LOCATING SERIES/DATAFRAME
+        print(df['A'])  # Dostęp do kolumny jako Series
+        print(df.loc[0])  # Dostęp do wiersza przez etykietę
+        print(df.iloc[0]) # Dostęp do wiersza przez indeks pozycyjny
