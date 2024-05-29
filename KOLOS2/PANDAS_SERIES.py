@@ -134,3 +134,4 @@ print(s7.str.strip())
 print(s7.str.split('a'))
 
 
+data2 = data.stack() tworzy serie z pliku csv
