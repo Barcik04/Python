@@ -134,4 +134,18 @@ print(s7.str.strip())
 print(s7.str.split('a'))
 
 
-data2 = data.stack() tworzy serie z pliku csv
+data2 = data.stack() #tworzy serie z pliku csv
+import pandas as pd
+data = pd.read_csv('jajka2024.csv', sep=';', index_col=0,
+encoding='UTF-8')
+print(data)
+data2 = data.stack()
+print(data2)
+data3 = data2.str.replace(',', '.').astype('float')
+srednia = data3.mean()
+minCena = data3.min()
+maxCena = data3.max()
+print(data3[data3 == minCena])
+print(data3[data3 == maxCena])
+
+
