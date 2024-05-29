@@ -77,3 +77,13 @@ Tworzenie wykresu rozrzutu
 Zapisywanie wykresu do pliku
         plt.plot(x, y)
         plt.savefig('plot.png')
+
+
+Wykres pudełkowy (boxplot)
+        data = [np.random.normal(0, std, 100) for std in range(1, 4)]
+        plt.boxplot(data)
+        plt.show()
+        Opis: Wykres pudełkowy, zwany także wykresem skrzynkowym, używany jest do wizualizacji rozkładu danych oraz do identyfikacji wartości odstających. 
+        Wykres przedstawia medianę, kwartyle oraz potencjalne wartości odstające.
+
+
