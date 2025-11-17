@@ -6,8 +6,8 @@ with open("grid.txt") as f:
 H, W = len(grid), len(grid[0])
 print(H, W)
 
-start = (H - 1, 0)   # bottom-left
-goal  = (0, W - 1)   # top-right
+start = (H - 1, 0)  
+goal  = (0, W - 1)  
 
 def print_grid(g):
     for row in g:
