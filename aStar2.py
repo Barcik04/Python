@@ -22,7 +22,7 @@ def move(start, goal):
 
     undiscovered_cells = []             # lista pól które nie zostały jeszcze odwiedzone, a czekają w kolejce
     total_cost = {start: 0}       # cena podróży od startu do danego pole
-    came_from = {}            # to reconstruct the final path
+    came_from = {}            # używamy potem aby zrekonstruować od tyłu drogę
 
 
     heapq.heappush(undiscovered_cells, (h(*start), start))
